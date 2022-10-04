@@ -3,6 +3,13 @@ module.exports = {
     '@mate-academy/eslint-config-react-typescript',
     'plugin:react/recommended',
   ],
+  settings: {
+    "import/resolver": {
+      "node": {
+        "extensions": [".ts", ".tsx", "js", ".scss"]
+      }
+    }
+  },
   rules: {
     // React
     'react/prop-types': 0,
